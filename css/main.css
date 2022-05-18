@@ -1,0 +1,132 @@
+/* Reset styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+article, aside, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+  
+/* Base ----------------------------------------------------- */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    background-color: #82869D;
+}
+
+.calc {
+    color: #ffffff;
+    width: 341px;
+    height: 648px;
+    border-radius: 30px;
+    background-color: #181A24;
+
+    margin: 20px auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.calc_light-theme {
+    color: #505050;
+    background-color: #F6F7FC;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05),
+                 4px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calc_light-theme .btn:not(.btn_violet) {
+    background-color: #ffffff;
+}
+
+.result {
+    width: 100%;
+    height: 40%;
+}
+.result > * {
+    width: 100%;
+    background-color: transparent;
+}
+
+.result__total {
+    font-size: 6.72em;
+    font-weight: 700;
+    color: inherit;
+    height: 40%;
+    margin-top: 60px;
+    padding: 0px 20px;
+}
+.result__temp {
+    font-size: 3.3em;
+    color: inherit;
+    height: 20%;
+    padding: 0px 27px;
+}
+
+.controls {
+    height: 60%;
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.7em;
+    row-gap: 0.3266em;
+}
+
+.btn { 
+    font-size: inherit;
+    color: inherit;
+    width: 58.1px;
+    height: 56.7px;
+    border-radius: 10px;
+    background-color: #1D1F2D;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.btn:active {
+    transform: translate(0.7px, 0.7px);
+}
+
+.btn_violet {
+    color: #ffffff;
+    background-color: #93A3F3;
+    box-shadow: none;
+}
+
+#clear {
+    font-size: 1.1em;
+}
+
+#backspace img {
+    width: 29.18px;
+    vertical-align: top;
+}
+
+#theme-switcher img {
+    width: 70%;
+    vertical-align: middle;
+}

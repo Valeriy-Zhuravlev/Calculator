@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <form class="calc">
+        <div class="result">
+            <input class="result__total" value="0" disabled></input>
+            <input class="result__temp" value="0" maxlength="9" autocomplete="off" disabled></input>
+        </div>
+        <div class="controls">
+            <button id="clear" class="btn btn_violet" type="button">C</button>
+            <button id="backspace" class="btn btn_violet" type="button"><img src="img/backspace.svg" alt="backspace"></button>
+            <button class="btn btn_violet" type="button" value="%">%</button>
+            <button class="btn btn_violet" type="button" value="/">&#247;</button>
+            <button class="btn" type="button" value="7">7</button>
+            <button class="btn" type="button" value="8">8</button>
+            <button class="btn" type="button" value="9">9</button>
+            <button class="btn btn_violet" type="button" value="*">&#215;</button>
+            <button class="btn" type="button" value="4">4</button>
+            <button class="btn" type="button" value="5">5</button>
+            <button class="btn" type="button" value="6">6</button>
+            <button class="btn btn_violet" type="button" value="-">-</button>
+            <button class="btn" type="button" value="1">1</button>
+            <button class="btn" type="button" value="2">2</button>
+            <button class="btn" type="button" value="3">3</button>
+            <button class="btn btn_violet" type="button" value="+">+</button>
+            <button class="btn" type="button" value="0">0</button>
+            <button class="btn" type="button" value=".">.</button>            
+            <button id="theme-switcher" class="btn btn_violet" type="button"><img src="img/day-night.svg" alt=""></button>
+            <button id="equals" class="btn btn_violet" type="button">=</button>
+        </div>        
+    </form>
+
+    <script src="app/calculator.js"></script>
+</body>
+</html>
