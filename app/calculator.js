@@ -6,14 +6,9 @@ const controls = document.querySelector('.controls');
 const operators = ['/', '*', '-', '+',];
 let initial = true;
 
-// =====================================================================
-
 document.addEventListener('keydown', (e) => typeChar(e));
 controls.addEventListener('click', (e) => clickChar(e));
-
 themeSwitcher.addEventListener('click', () => calc.classList.toggle('calc_light-theme'));
-
-// =====================================================================
 
 function typeChar(e) {
     inputChar(e.key);
@@ -99,7 +94,7 @@ function inputChar(btn) {
         temp.value += btn;
         initial = false;
     }
-    else if (btn === 'Backspace' || btn === 'backspace') { // physical/virtual buttons
+    else if (btn === 'Backspace' || btn === 'backspace') {
         deleteLastChar();
     }
     else if (btn === '=' || btn === 'Enter' || btn === 'equals') {
@@ -170,8 +165,6 @@ function reset() {
 function isOperandComplete() {
     return isNaN(temp.value);
 }
-
-// =====================================================================
 
 function getPrepare(operand1, operator) {
     total.value = operand1 + operator;
